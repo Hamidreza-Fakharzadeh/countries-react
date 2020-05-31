@@ -7,10 +7,14 @@ function App() {
   return (
     <div className="App container">
       <div className="row">
+        <nav className="nav-country lg-col-12">
+          <div className="title">Where in the world</div>
+          <div>Dark mode</div>
+        </nav>
     
       {countriesAll.map((obj,index)=>{
         return(
-          <div key={index} className="card lg-col-2">
+          <div key={index} className="card lg-col-3">
       
             <img src={obj.flag}/>
             
